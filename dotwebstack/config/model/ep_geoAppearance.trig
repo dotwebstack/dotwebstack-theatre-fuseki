@@ -1,18 +1,26 @@
 @prefix elmo: <http://dotwebstack.org/def/elmo#> .
 @prefix config: <http://dotwebstack.org/configuration/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
 
 GRAPH config:Theatre {
 
   config:GeoAppearanceEndpoint a elmo:Endpoint;
     elmo:pathPattern "/geoAppearance";
     elmo:stage config:Stage;
-    elmo:getRepresentation config:GeoAppearance;
+    elmo:getRepresentation config:GeoAppearanceRepresentation;
   .
 
-  config:GeoAppearance a elmo:Representation;
+  config:GeoAppearanceRepresentation a elmo:Representation;
     elmo:stage config:Stage;
     elmo:informationProduct config:GeoAppearanceData;
-    elmo:appearance [a elmo:GeoAppearance];
+    elmo:appearance config:GeoAppearance;
+  .
+
+  config:GeoAppearance a elmo:GeoAppearance;
+    elmo:fragment [
+      elmo:appliesTo "red";
+      xhtml:icon "/images/red.png";
+    ];
   .
 
 }
