@@ -3,7 +3,7 @@ echo Download fuseki
 curl http://www-eu.apache.org/dist/jena/binaries/apache-jena-fuseki-3.8.0.zip -o fuseki.zip
 echo Unzip fuseki
 unzip fuseki.zip
-"C:\Program Files\7-Zip\7z.exe" e fuseki.zip
+"C:\Program Files\7-Zip\7z.exe" x fuseki.zip
 del fuseki.zip
 ren apache-jena-fuseki-3.8.0 fuseki
 echo Download Dotwebstack
