@@ -23,7 +23,7 @@ Instructions to get starten:
 3. Start `install.sh` (Linux and Mac) or `install.bat` (Windows)
 4. Start `start-fuseki.sh` or `start-fuseki.bat` to get the triple store running
 5. Start `start-dws.sh` or `start-dws.bat` to get the dotwebstack theatre running
-6. Go to http://localhost:8080/welcome to see the results
+6. Go to http://localhost:8080 to see the results
 
 Further instructions:
 
