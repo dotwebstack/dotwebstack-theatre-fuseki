@@ -2,8 +2,7 @@
 rem First check if all needed commands are available
 where /Q curl
 IF %ERRORLEVEL%==0 (
-  dir "C:\Program Files\7-Zip\7z.exe" >nul 2>nul
-  IF %ERRORLEVEL%==0 (
+  IF EXIST "C:\Program Files\7-Zip\7z.exe" (
     echo Download fuseki
     curl http://www-eu.apache.org/dist/jena/binaries/apache-jena-fuseki-3.8.0.zip -o fuseki.zip
     echo Unzip fuseki
