@@ -1,5 +1,5 @@
 @echo off
 echo start Fuseki
 cd fuseki
-call fuseki-server -loc=run/databases /dotwebstack
+call fuseki-server --config=../config-dotwebstack.ttl
 pause

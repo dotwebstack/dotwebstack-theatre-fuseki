@@ -31,3 +31,7 @@ You should receive some version information, if not: please install and make sur
 - Your dotwebstack configuration files are stores in the directory `/config/model`.
 - After you change the configuration, you need to restart the dotwebstack (CTRL-C in the dotwebstack command window, and redo step 5).
 - To stop fuseki, press CTRL-C in the fuseki command window.
+
+## Enabling a spatial index
+
+To create a spatial dataset, use `start-fuseki-spatial` instead of `start-fuseki`.

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 echo start Fuseki
 cd fuseki
-source fuseki-server -loc=run/databases /dotwebstack
+source fuseki-server --config=../config-dotwebstack.ttl
