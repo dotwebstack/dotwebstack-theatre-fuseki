@@ -5,7 +5,8 @@ This repository contains a reference implementation, using a fuseki triple store
 
 ## Prerequisites:
 - Installation of java JRE: https://www.java.com
-- Installation of curl: https://curl.haxx.se/download.html
+- Installation of curl: https://curl.haxx.se/download.html (often already installed for Linux and Mac users)
+- Windows users might need to install 7zip: https://www.7-zip.org, if not already available
 
 To find out if you have already installed java and/or curl, please type the following statements from the command line:
 
