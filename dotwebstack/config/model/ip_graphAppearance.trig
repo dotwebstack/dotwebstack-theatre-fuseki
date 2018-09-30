@@ -1,0 +1,21 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:GraphAppearanceData a elmo:InformationProduct;
+    elmo:backend config:FusekiBackend;
+    elmo:query """
+      prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      prefix ex: <http://example.org#>
+      CONSTRUCT {
+        ex:middle rdfs:label "Middle";
+            rdfs:seeAlso ex:west
+        .
+        ex:west rdfs:label "West".
+      }
+      WHERE {}
+    """
+  .
+
+}
