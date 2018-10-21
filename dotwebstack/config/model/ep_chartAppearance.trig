@@ -1,0 +1,20 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix elmo1: <http://bp4mc2.org/elmo/def#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+@prefix xhtml: <http://www.w3.org/1999/xhtml/vocab#>.
+
+GRAPH config:Theatre {
+
+  config:ChartAppearanceEndpoint a elmo:Endpoint;
+    elmo:pathPattern "/chartAppearance";
+    elmo:stage config:Stage;
+    elmo:getRepresentation config:ChartAppearanceRepresentation;
+  .
+
+  config:ChartAppearanceRepresentation a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:ChartAppearanceData;
+    elmo:appearance [a elmo:ScatterPlotChartAppearance];
+  .
+
+}

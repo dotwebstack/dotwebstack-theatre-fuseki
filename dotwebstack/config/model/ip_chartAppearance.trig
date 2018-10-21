@@ -1,0 +1,20 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:ChartAppearanceData a elmo:InformationProduct;
+    elmo:backend config:FusekiBackend;
+    elmo:query """
+      prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      CONSTRUCT {
+        <urn:measure-1> rdfs:label 10 ; rdf:value 8.3 .
+        <urn:measure-2> rdfs:label 20 ; rdf:value 10 .
+        <urn:measure-3> rdfs:label 30 ; rdf:value 0 .
+      }
+      WHERE {}
+    """
+  .
+
+}
