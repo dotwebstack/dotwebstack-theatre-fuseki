@@ -10,9 +10,15 @@ GRAPH config:Theatre {
       prefix ex: <http://example.org#>
       CONSTRUCT {
         ex:middle rdfs:label "Middle";
-            rdfs:seeAlso ex:west
+            rdfs:seeAlso ex:west;
+            rdfs:seeAlso ex:east;
+            rdfs:seeAlso ex:north;
+            rdfs:seeAlso ex:south;
         .
         ex:west rdfs:label "West".
+        ex:east rdfs:label "East".
+        ex:north rdfs:label "North".
+        ex:south rdfs:label "South".
       }
       WHERE {}
     """
