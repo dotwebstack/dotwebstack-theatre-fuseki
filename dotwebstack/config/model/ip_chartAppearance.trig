@@ -8,10 +8,13 @@ GRAPH config:Theatre {
     elmo:query """
       prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      prefix qb: <http://purl.org/linked-data/cube#>
       CONSTRUCT {
-        <urn:measure-1> rdfs:label 10 ; rdf:value 8.3 .
-        <urn:measure-2> rdfs:label 20 ; rdf:value 10 .
-        <urn:measure-3> rdfs:label 30 ; rdf:value 0 .
+        <urn:dimension> a qb:DimensionProperty.
+        <urn:measure> a qb:MeasureProperty.
+        <urn:measure-1> <urn:dimension> 10 ; <urn:measure> 8.3 .
+        <urn:measure-2> <urn:dimension> 20 ; <urn:measure> 10 .
+        <urn:measure-3> <urn:dimension> 40 ; <urn:measure> 0 .
       }
       WHERE {}
     """

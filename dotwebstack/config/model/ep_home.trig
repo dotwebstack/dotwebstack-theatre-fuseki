@@ -13,6 +13,13 @@ GRAPH config:Theatre {
     elmo:stage config:Stage;
     elmo:informationProduct config:HomeData;
     elmo:appearance [a elmo:HtmlAppearance];
+    elmo:contains config:Menu;
+  .
+
+  config:Menu a elmo:Representation;
+    elmo:stage config:Stage;
+    elmo:informationProduct config:MenuData;
+    elmo:appearance [a elmo:NavbarSearchAppearance];
   .
 
 }
