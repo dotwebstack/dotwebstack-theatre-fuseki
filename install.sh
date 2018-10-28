@@ -12,7 +12,7 @@ if hash curl 2>/dev/null; then
     cp resources/jetty-web.xml fuseki/webapp/WEB-INF
     echo Download Dotwebstack
     cd dotwebstack
-    curl -L https://github.com/dotwebstack/dotwebstack-theatre-legacy/releases/download/v0.0.35/dotwebstack-theatre-legacy-0.0.35.jar -o dotwebstack.jar
+    curl -L https://github.com/dotwebstack/dotwebstack-theatre-legacy/releases/download/v0.0.36/dotwebstack-theatre-legacy-0.0.36.jar -o dotwebstack.jar
   else
     echo "Error: unzip not found"
   fi

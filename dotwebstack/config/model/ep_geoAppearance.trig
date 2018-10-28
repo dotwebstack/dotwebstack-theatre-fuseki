@@ -17,10 +17,10 @@ GRAPH config:Theatre {
   .
 
   config:GeoAppearance a elmo:GeoAppearance;
-#    elmo:fragment [
-#      elmo:appliesTo "red";
-#      xhtml:icon "/images/red.png";
-#    ];
+    elmo:fragment [
+      elmo:appliesTo "red";
+      xhtml:icon "/assets/images/tree.png";
+    ];
   .
 
 }

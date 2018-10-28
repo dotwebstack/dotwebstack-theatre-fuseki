@@ -11,7 +11,7 @@ IF %ERRORLEVEL%==0 (
     ren apache-jena-fuseki-3.8.0 fuseki
     echo Download Dotwebstack
     cd dotwebstack
-    curl -L https://github.com/dotwebstack/dotwebstack-theatre-legacy/releases/download/v0.0.34/dotwebstack-theatre-legacy-0.0.34.jar -o dotwebstack.jar
+    curl -L https://github.com/dotwebstack/dotwebstack-theatre-legacy/releases/download/v0.0.36/dotwebstack-theatre-legacy-0.0.36.jar -o dotwebstack.jar
   ) ELSE (
     echo 7z.exe not found in C:\Program Files\7-Zip\
   )
